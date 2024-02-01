@@ -79,28 +79,15 @@ section{
 
 .home {
   display: flex;
-  justify-content: conter;
+  justify-content: space-between;
   align-items: center;
 }
 
 .home-img img{
-  width: 35vw;
+  width: 20vw;
   animation: floatImage 4s ease-in-out infinite;
 }
 
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-2.4rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 .home-content h3 {
   font-size: 3.2rem;
@@ -170,8 +157,12 @@ span{
   background: var(--second-bg-color);
 }
 
+.about p {
+  font-size: 15px;
+}
+
 .about-img img {
-  width: 35vw;
+  width: 20vw;
 }
 
 .heading {
@@ -317,41 +308,16 @@ span{
     margin-bottom: 3rem;
 }
 
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
+.contact .phone-cont{
+  margin-top: 200px;
 }
 
-.contact form .input-box{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+.contact p {
+  font-size: 20px;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--second-bg-color);
-  border-radius: .8rem;
-  margin: .7rem 0;
-}
-
-.contact form .input-box input {
-  width: 49%;
-}
-
-.contact form textarea{
-  resize: none;
-}
-
-.contact form .btn{
-  margin-top: 2rem;
-  cursor: pointer;
+.contact .b{
+  color: blue;
 }
 
 .footer {
